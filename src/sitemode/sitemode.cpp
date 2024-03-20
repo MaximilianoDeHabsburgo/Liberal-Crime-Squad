@@ -584,6 +584,8 @@ void pressedKeyR(const bool freeable, const bool enemy) {
 						setSiteAlarmOne(); /* alarm for prisoner escape */
 						criminalizeEncounterPrisonerEscape(e);
 					}
+					//give all your squad 3 juice points, up to 200
+					juiceparty(3, 200);
 					followers++, flipstart = 1, freed = 1;
 					if (partysize < 6)
 					{
